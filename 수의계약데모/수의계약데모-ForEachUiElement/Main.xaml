@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="600,1343" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="675,1407" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="48">
+    <scg:List x:TypeArguments="x:String" Capacity="40">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -44,7 +44,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="37">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -82,58 +82,72 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="592,1278" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="592,1342" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="x:Object" Name="Get_Text__계약금액_에서_Text" />
     </ueab:SequenceX.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 수의계약내역 | 서울특별시" sap:VirtualizedContainerService.HintSize="550,1188" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ecbe14d3-f22a-4edc-98b1-bad7e4560f74" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 수의계약내역 | 서울특별시" sap:VirtualizedContainerService.HintSize="550,1252" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ecbe14d3-f22a-4edc-98b1-bad7e4560f74" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="538,966" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="538,1030" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NForEachUiElement DisplayName="For Each UiElement" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="496,874" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" MaximumResults="0" ScopeIdentifier="ecbe14d3-f22a-4edc-98b1-bad7e4560f74" Version="V1">
+            <uix:NForEachUiElement DisplayName="For Each UiElement" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='CurrentLabel_1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="496,938" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" InteractionMode="DebuggerApi" MaximumResults="0" ScopeIdentifier="ecbe14d3-f22a-4edc-98b1-bad7e4560f74" Version="V1">
               <uix:NForEachUiElement.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="454,603" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="454,667" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="412,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[CurrentElement_Label]" />
-                    <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="412,137" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V1" />
-                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="412,81" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                    <uix:NNavigateBrowser DisplayName="Navigate Browser - 뒤로 이동" sap:VirtualizedContainerService.HintSize="412,81" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V1" />
+                    <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="412,137" sap2010:WorkflowViewState.IdRef="NClick_2" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V1" />
+                    <uix:NGetText DisplayName="Get Text '계약금액'" sap:VirtualizedContainerService.HintSize="412,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ecbe14d3-f22a-4edc-98b1-bad7e4560f74" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.seoul.go.kr/news/news_contract.do#view/367653" DesignTimeRectangle="1270, 1367, 1496, 61" ElementType="Text" FriendlyName="'43,740,000원'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="49b11c8c-657a-4e87-86dc-cfbf13d1fef4" InformativeScreenshot="8f21bce05ebc8a1258f5eaaf3cc8d494.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 서울문화마당 제21권 발간 계약 &amp;gt; 서울역사편찬원 계단장석 및 주변장석 파손에 따른 개보수공사 &amp;gt; 서울역사편찬원 발간물 이전 용역 &amp;gt; 제12회 서울미디어시티비엔날레 사전프로그램(프리비엔날레) 작품해포 및 설치, 운송 용역 &amp;gt; 제12회 서울미디어시티비엔날레 사전프로그램(프리비엔날레) 공간 디자인 용역 &amp;gt; 제12회 서울미디어시티비엔날레 사전프로그램(프리비엔날레) 그래픽 디자인 및 인쇄물 제작 용역 &amp;gt; 제12회 서울미디어시티 비엔날레 사전프로그램(프리비엔날레) 미디어기기 대여 용역 &amp;gt; 정서영 개인전 오늘 본 것 출품작 운송 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 서울역사편찬원 계단장석 및 주변장석 파손에 따른 개보수공사 &amp;gt; 서울역사편찬원 발간물 이전 용역 &amp;gt; 제12회 서울미디어시티비엔날레 사전프로그램(프리비엔날레) 작품해포 및 설치, 운송 용역 &amp;gt; 제12회 서울미디어시티비엔날레 사전프로그램(프리비엔날레) 공간 디자인 용역 &amp;gt; 제12회 서울미디어시티비엔날레 사전프로그램(프리비엔날레) 그래픽 디자인 및 인쇄물 제작 용역 &amp;gt; 제12회 서울미디어시티 비엔날레 사전프로그램(프리비엔날레) 미디어기기 대여 용역 &amp;gt; 정서영 개인전 오늘 본 것 출품작 운송 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 제12회 서울미디어시티 비엔날레 사전프로그램(프리비엔날레) 미디어기기 대여 용역 &amp;gt; 정서영 개인전 오늘 본 것 출품작 운송 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 제12회 서울미디어시티 비엔날레 사전프로그램(프리비엔날레) 미디어기기 대여 용역 &amp;gt; 정서영 개인전 오늘 본 것 출품작 운송 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 정서영 개인전 오늘 본 것 출품작 운송 용역 &amp;gt; 정서영 개인전 오늘 본 것 출품작 운송 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 춤추는 낱말 작품 운송 및 연출 용역 &amp;gt; 수의계약내역 | 서울특별시' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="942, 1367, 328, 61" ElementType="Text" FriendlyName="'계약금액'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='계약금액' check:innerText='계약금액' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:Object">[Get_Text__계약금액_에서_Text]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NNavigateBrowser DisplayName="Navigate Browser - 뒤로 이동" sap:VirtualizedContainerService.HintSize="412,81" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V1" />
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="412,81" sap2010:WorkflowViewState.IdRef="Delay_3" />
                   </Sequence>
                 </ActivityAction>
               </uix:NForEachUiElement.Body>
+              <uix:NForEachUiElement.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.seoul.go.kr/news/news_contract.do#list/1" DesignTimeRectangle="2384, 2090, 80, 80" ElementType="Text" FriendlyName="'다음'" FullSelectorArgument="&lt;webctrl aaname='다음' parentid='seoul-integrated-board' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='다음' parentid='seoul-integrated-board' tag='A' type='' class='sib-paging-next' check:innerText='다음' /&gt;" Guid="3dbbea3f-7134-4e24-b0fb-203f219b4025" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAEgSURBVHhe7dDBCcJQFAVRy09x6SlyhWTjQtSB3PeZgWngPA5DExTuAt333f/4TFDoszdQ+y5B4QSFExROUDhB4QSFExROUDhB4QSFExROUDhB4QSFExROUDhB4QSFExROUDhB4QSFExROUDhB4QSFExRuHOi2ba9bGwvaijoONDWjjgRNrahjQVMj6mjQ1IY6HjQ1oS4BmlpQlwFNDahLgaa7UZcCvRszLQPagJmWAG3BTONBmzDTaNA2zDQWtBEzjQRtxUzjQJsx01jQ1saBticonKBwgsIJCiconKBwgsIJCiconKBwgsIJCiconKBwgsIJCiconKBwgsIJCiconKBwgsIJCiconKBwgsIJCvcR1H/7TFDoswvUmARFO44npfQWcnjCgfEAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='수의계약내역 | 서울특별시' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NForEachUiElement.NextLink>
               <uix:NForEachUiElement.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="590, 869, 1824, 929" FriendlyName="'13649춤추는 낱말'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="c7a0b31a-bda3-422a-980b-1bdeaad33e1b" InformativeScreenshot="30e3d9a44c62a759bb780ec5f8b1f4aa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='수의계약내역 | 서울특별시' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                <uix:TargetAnchorable DesignTimeRectangle="942, 995, 1824, 909" FriendlyName="'13649춤추는 낱말'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="6d8f86cd-001d-4494-9395-e65938c5dbda" InformativeScreenshot="f4d33c4b965c5b80511d49916473e387.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='수의계약내역 | 서울특별시' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
               </uix:NForEachUiElement.Target>
               <uix:NForEachUiElement.Variables>
                 <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
                 <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
-                <Variable x:TypeArguments="x:String" Name="CurrentLabel_1_Label" />
-                <Variable x:TypeArguments="x:String" Name="CurrentLabel_2" />
-                <Variable x:TypeArguments="ui:UiElement" Name="CurrentLabel_1" />
+                <Variable x:TypeArguments="x:String" Name="CurrentLabel_1" />
               </uix:NForEachUiElement.Variables>
               <uix:NForEachUiElement.VariablesMetadata>
                 <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
@@ -141,11 +155,7 @@
                   <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
                 </scg:List>
                 <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
-                  <uuam:VariableMetadata Name="CurrentLabel_1_Label" Type="x:String" />
-                  <uuam:VariableMetadata Name="CurrentLabel_1" Type="ui:UiElement" />
-                </scg:List>
-                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column2" Capacity="4">
-                  <uuam:VariableMetadata Name="CurrentLabel_2" Type="x:String" />
+                  <uuam:VariableMetadata Name="CurrentLabel_1" Type="x:String" />
                 </scg:List>
               </uix:NForEachUiElement.VariablesMetadata>
             </uix:NForEachUiElement>
