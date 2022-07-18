@@ -1,0 +1,160 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="697,1448.5" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="592,1383.5" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 수의계약내역 | 서울특별시" sap:VirtualizedContainerService.HintSize="550,1293.5" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ecbe14d3-f22a-4edc-98b1-bad7e4560f74" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="538,1071.5" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NForEachUiElement DisplayName="For Each UiElement" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='CurrentLabel_1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='CurrentLabel_2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="496,979.5" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" MaximumResults="0" ScopeIdentifier="ecbe14d3-f22a-4edc-98b1-bad7e4560f74" Version="V1">
+              <uix:NForEachUiElement.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="454,708.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="412,137" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V1" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="412,197.5" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InUiElement="[CurrentElement]" Text="[CurrentLabel_1_Label]" Version="V1" />
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="412,81" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NNavigateBrowser DisplayName="Navigate Browser - 뒤로 이동" sap:VirtualizedContainerService.HintSize="412,81" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V1" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NForEachUiElement.Body>
+              <uix:NForEachUiElement.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="810, 1069, 1824, 909" FriendlyName="'13649춤추는 낱말'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="5eb5168f-10c2-4206-9dd6-4690efdf34bd" InformativeScreenshot="62cb14b92d036e2963f62f56d691c8b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='수의계약내역 | 서울특별시' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NForEachUiElement.Target>
+              <uix:NForEachUiElement.Variables>
+                <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                <Variable x:TypeArguments="x:String" Name="CurrentLabel_1_Label" />
+                <Variable x:TypeArguments="x:String" Name="CurrentLabel_2" />
+                <Variable x:TypeArguments="ui:UiElement" Name="CurrentLabel_1" />
+              </uix:NForEachUiElement.Variables>
+              <uix:NForEachUiElement.VariablesMetadata>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                  <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                  <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                </scg:List>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
+                  <uuam:VariableMetadata Name="CurrentLabel_1_Label" Type="x:String" />
+                  <uuam:VariableMetadata Name="CurrentLabel_1" Type="ui:UiElement" />
+                </scg:List>
+                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column2" Capacity="4">
+                  <uuam:VariableMetadata Name="CurrentLabel_2" Type="x:String" />
+                </scg:List>
+              </uix:NForEachUiElement.VariablesMetadata>
+            </uix:NForEachUiElement>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="247, 193, 2994, 2224" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAR+SURBVFhHxdZtbFNVHAbw/6ayrh0rgziNJiCJcb7gtrZ0XRkzGxtsbWWBEGckIogQg2xEwqLxBSabC9N2fbmFzSlETdQQBPxAoh/MnGOumwgoGwga0MSg8SUaY+K7sT7/u3uau3tPS2dI+PBLu/X0Ps8999zTS8lk8opKvalU/FLl/QHqCNRQIt9D7xVVppUocFDIsY5ywqeJQqeIgp+w2eDW3rMC8f6yF2BjtnJqXhUkin8uAnOhHRrABvNALXE5C1wl3g/ZK9TX27a+RRQ7K0qUwSDcA7WwHCzTKtDplxawwR6YgCFYAzRqc9DeklVk6T5B1DMuSrwLW2A1tMKd2Rd4MUDbV9TSqGVKASsMQNKgBuhYfiktW9NHpJwTBTrgTXga4tCedQFXb4BWPtlAAzjw4KxUgTYt0Og45I1iLQQdDxJFziBcXZAPwTjshE54JesCzNUXoH53NY1Y1VmwwHktUGb9kN1NR66vJfvOYVyGCS6wEb6AKCiwb1oFnC8E6N62ZXR0podn4TqE/GII1evlxfjOtXfR7PYhorBa4ClIwtfwMpyfVgHIdaDErqU1NJbnyUMILzxZOGvi2zFaej/l8CKc3BMGtAK/whgcy6aADVbDCJxy7/Y/5o356SVXNd8RTQj61xDM9h8tdNMHM11U3nJA3Io18A9wAfYDXHIGyuAkJPUW9gaUxWEfvbpgMSWsnrUIHIYf4SI8myhwzhic5SEf3wFRNbwQzmrBwp9wJFOBeviZA2WcfYGWul2NdHj+IrE3FCPU/qG1jPbP9ZGzFWce/4zD8+GQFmrUna7ADfCTCJP4HT7GenAs39FAB26uoo/ynJTA5tO9cAMVdY6Ie/8WGNEF6v0NLlmBHHhNC8pkAjbjzrAseb6enqlfSd6Nb0yu9shpPuuHga+zLJx1QSpXX+ABXYjeVxCHYd3/uryKr6Bit48s8UO43hd4td+KAx/XBcl8CWl/jFp1AYynezvMAf48FzbDb/BtlVI/9/ZoC6b7U57yR+B7kIUKF8EFPF5awAo7oB82QTnw/41KKxXflmql2j8v0oWDnWvWAjLh9bAA1HAmK5CRV2mkRcpSqlKW4O9GKom20dXBsToKjv+FA8pChbdhDqTC2TQK+BBaRxVKE5XG1qvBhT2HcZAzMyg4cQIHk4WyP2AbTAkWsiqAhaae9fxIB+WHBvFF3lb5mqvXfSvIghlfb94B1TCZrArwmd8YjuILvLGkflpZMXwHsnDe6e4GMVbqkgX4WpdEt2Ewn23qyUbwgiycPQrG8SYZC/C0u2LNdE0ogcF4yjUfYAPIwi8Ab0ay70yRtoBXacCrj+w9BzEw9WBpFAJZAf6tl403SVNgcsUXh/sxSP1BSScCsgKPg2y8ibRAlVJLN0U6MYDPPLXgZJ4DWQF1n8+GqQBf9zuimyhHHWBadEYrQFbg/18CZ+w+7GxpF51REXwDxgIHQTbexFSgLLZO+zDj1OuFwVjgCZCNNZEUWIvpP4kPsy7Aj1uvgwh/H3iDko01MRW4MpL0H9UQM0PB2WBoAAAAAElFTkSuQmCC" InformativeScreenshot="a71844302e3107c35907adea79d04d18.png" Selector="&lt;html app='chrome.exe' title='수의계약내역 | 서울특별시' /&gt;" Url="https://www.seoul.go.kr/news/news_contract.do#list/1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
